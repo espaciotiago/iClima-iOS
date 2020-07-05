@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10FCEEF26531D67C91EC5FC2 /* Pods_iClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75810A027B4B5F664E1603EC /* Pods_iClima.framework */; };
+		9997381524B2582F0011BA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997381424B2582F0011BA1F /* AppDelegate.swift */; };
+		9997381924B2582F0011BA1F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997381824B2582F0011BA1F /* WeatherViewController.swift */; };
+		9997381C24B258300011BA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9997381A24B2582F0011BA1F /* Main.storyboard */; };
+		9997381E24B258310011BA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9997381D24B258310011BA1F /* Assets.xcassets */; };
+		9997382124B258310011BA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9997381F24B258310011BA1F /* LaunchScreen.storyboard */; };
+		9997382D24B25A260011BA1F /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9997382C24B25A260011BA1F /* Configuration.plist */; };
+		9997382F24B25A710011BA1F /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997382E24B25A710011BA1F /* ConfigurationManager.swift */; };
+		9997383124B25ACB0011BA1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997383024B25ACB0011BA1F /* Constants.swift */; };
+		9997383324B2668A0011BA1F /* StackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997383224B2668A0011BA1F /* StackItemView.swift */; };
+		9997383524B26E440011BA1F /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997383424B26E440011BA1F /* Formatter.swift */; };
+		9997383724B277910011BA1F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997383624B277910011BA1F /* NetworkService.swift */; };
+		9997383B24B27ECD0011BA1F /* WeatherLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997383A24B27ECD0011BA1F /* WeatherLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B59F247D2712F4CD6D6D9AD /* Pods-iClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClima.release.xcconfig"; path = "Target Support Files/Pods-iClima/Pods-iClima.release.xcconfig"; sourceTree = "<group>"; };
+		75810A027B4B5F664E1603EC /* Pods_iClima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iClima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847A1A5FC1CC92E8A2D443CC /* Pods-iClima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClima.debug.xcconfig"; path = "Target Support Files/Pods-iClima/Pods-iClima.debug.xcconfig"; sourceTree = "<group>"; };
+		9997381124B2582F0011BA1F /* iClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9997381424B2582F0011BA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9997381824B2582F0011BA1F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
+		9997381B24B2582F0011BA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9997381D24B258310011BA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9997382024B258310011BA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9997382224B258310011BA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9997382C24B25A260011BA1F /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		9997382E24B25A710011BA1F /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		9997383024B25ACB0011BA1F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9997383224B2668A0011BA1F /* StackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackItemView.swift; sourceTree = "<group>"; };
+		9997383424B26E440011BA1F /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		9997383624B277910011BA1F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9997383A24B27ECD0011BA1F /* WeatherLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9997380E24B2582F0011BA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FCEEF26531D67C91EC5FC2 /* Pods_iClima.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D919223B75224D5C3ACBC0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				847A1A5FC1CC92E8A2D443CC /* Pods-iClima.debug.xcconfig */,
+				4B59F247D2712F4CD6D6D9AD /* Pods-iClima.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9997380824B2582F0011BA1F = {
+			isa = PBXGroup;
+			children = (
+				9997381324B2582F0011BA1F /* iClima */,
+				9997381224B2582F0011BA1F /* Products */,
+				5D919223B75224D5C3ACBC0D /* Pods */,
+				F9EC61D82FC42ABF4156C728 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9997381224B2582F0011BA1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9997381124B2582F0011BA1F /* iClima.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9997381324B2582F0011BA1F /* iClima */ = {
+			isa = PBXGroup;
+			children = (
+				9997382B24B25A080011BA1F /* Utils */,
+				9997382A24B2596A0011BA1F /* Controller */,
+				9997382924B259600011BA1F /* View */,
+				9997382824B259500011BA1F /* Model */,
+				9997381424B2582F0011BA1F /* AppDelegate.swift */,
+				9997381A24B2582F0011BA1F /* Main.storyboard */,
+				9997381D24B258310011BA1F /* Assets.xcassets */,
+				9997381F24B258310011BA1F /* LaunchScreen.storyboard */,
+				9997382224B258310011BA1F /* Info.plist */,
+				9997382C24B25A260011BA1F /* Configuration.plist */,
+			);
+			path = iClima;
+			sourceTree = "<group>";
+		};
+		9997382824B259500011BA1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9997382924B259600011BA1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9997383224B2668A0011BA1F /* StackItemView.swift */,
+				9997383A24B27ECD0011BA1F /* WeatherLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9997382A24B2596A0011BA1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9997381824B2582F0011BA1F /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9997382B24B25A080011BA1F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9997382E24B25A710011BA1F /* ConfigurationManager.swift */,
+				9997383024B25ACB0011BA1F /* Constants.swift */,
+				9997383424B26E440011BA1F /* Formatter.swift */,
+				9997383624B277910011BA1F /* NetworkService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F9EC61D82FC42ABF4156C728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75810A027B4B5F664E1603EC /* Pods_iClima.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9997381024B2582F0011BA1F /* iClima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9997382524B258310011BA1F /* Build configuration list for PBXNativeTarget "iClima" */;
+			buildPhases = (
+				4C27ED896A1EB51ED5E25B72 /* [CP] Check Pods Manifest.lock */,
+				9997380D24B2582F0011BA1F /* Sources */,
+				9997380E24B2582F0011BA1F /* Frameworks */,
+				9997380F24B2582F0011BA1F /* Resources */,
+				07C8D6C5C743844E14911A16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iClima;
+			productName = iClima;
+			productReference = 9997381124B2582F0011BA1F /* iClima.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9997380924B2582F0011BA1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Santiago Moreno";
+				TargetAttributes = {
+					9997381024B2582F0011BA1F = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9997380C24B2582F0011BA1F /* Build configuration list for PBXProject "iClima" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9997380824B2582F0011BA1F;
+			productRefGroup = 9997381224B2582F0011BA1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9997381024B2582F0011BA1F /* iClima */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9997380F24B2582F0011BA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9997382124B258310011BA1F /* LaunchScreen.storyboard in Resources */,
+				9997382D24B25A260011BA1F /* Configuration.plist in Resources */,
+				9997381E24B258310011BA1F /* Assets.xcassets in Resources */,
+				9997381C24B258300011BA1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C8D6C5C743844E14911A16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iClima/Pods-iClima-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iClima/Pods-iClima-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iClima/Pods-iClima-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C27ED896A1EB51ED5E25B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iClima-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9997380D24B2582F0011BA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9997383524B26E440011BA1F /* Formatter.swift in Sources */,
+				9997383324B2668A0011BA1F /* StackItemView.swift in Sources */,
+				9997381924B2582F0011BA1F /* WeatherViewController.swift in Sources */,
+				9997381524B2582F0011BA1F /* AppDelegate.swift in Sources */,
+				9997382F24B25A710011BA1F /* ConfigurationManager.swift in Sources */,
+				9997383B24B27ECD0011BA1F /* WeatherLabel.swift in Sources */,
+				9997383124B25ACB0011BA1F /* Constants.swift in Sources */,
+				9997383724B277910011BA1F /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9997381A24B2582F0011BA1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9997381B24B2582F0011BA1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9997381F24B258310011BA1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9997382024B258310011BA1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9997382324B258310011BA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9997382424B258310011BA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9997382624B258310011BA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847A1A5FC1CC92E8A2D443CC /* Pods-iClima.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K77J59352;
+				INFOPLIST_FILE = iClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.espaciotiago.iClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9997382724B258310011BA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B59F247D2712F4CD6D6D9AD /* Pods-iClima.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K77J59352;
+				INFOPLIST_FILE = iClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.espaciotiago.iClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9997380C24B2582F0011BA1F /* Build configuration list for PBXProject "iClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9997382324B258310011BA1F /* Debug */,
+				9997382424B258310011BA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9997382524B258310011BA1F /* Build configuration list for PBXNativeTarget "iClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9997382624B258310011BA1F /* Debug */,
+				9997382724B258310011BA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9997380924B2582F0011BA1F /* Project object */;
+}
