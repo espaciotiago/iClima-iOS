@@ -18,4 +18,31 @@ struct ConfigurationManager {
         }
         return consfigurationDictionary[Constants.WEATHER_KEY] as? String ?? ""
     }
+    static func getMainUrl() -> String {
+        guard let path = Bundle.main.path(forResource: "Configuration", ofType: "plist") else {
+            return ""
+        }
+        guard let consfigurationDictionary = NSDictionary(contentsOfFile: path) else {
+            return ""
+        }
+        return consfigurationDictionary[Constants.MAIN_URL_KEY] as? String ?? ""
+    }
+    static func getImageUrl() -> String {
+        guard let path = Bundle.main.path(forResource: "Configuration", ofType: "plist") else {
+            return ""
+        }
+        guard let consfigurationDictionary = NSDictionary(contentsOfFile: path) else {
+            return ""
+        }
+        return consfigurationDictionary[Constants.WEATHER_IMAGE_URL] as? String ?? ""
+    }
+    static func getImageExtension() -> String {
+        guard let path = Bundle.main.path(forResource: "Configuration", ofType: "plist") else {
+            return ""
+        }
+        guard let consfigurationDictionary = NSDictionary(contentsOfFile: path) else {
+            return ""
+        }
+        return consfigurationDictionary[Constants.WEATHER_IMAGE_EXTENSION] as? String ?? ""
+    }
 }

@@ -9,6 +9,9 @@
 import UIKit
 
 struct Constants {
+    static let MAIN_URL_KEY: String = "MAIN_URL"
+    static let WEATHER_IMAGE_EXTENSION: String = "WEATHER_IMAGE_EXTENSION"
+    static let WEATHER_IMAGE_URL: String = "WEATHER_IMAGE_URL"
     static let WEATHER_KEY: String = "WEATHER_KEY"
     static let SPACING_SMALL: CGFloat = 8
     static let SPACING_LARGE: CGFloat = 30

@@ -4,5 +4,11 @@
 <dict>
 	<key>WEATHER_KEY</key>
 	<string>50687a86ef9064754ffaa8f222976375</string>
+	<key>MAIN_URL</key>
+	<string>https://api.openweathermap.org/data/2.5</string>
+	<key>WEATHER_IMAGE_URL</key>
+	<string>https://openweathermap.org/img/w</string>
+	<key>WEATHER_IMAGE_EXTENSION</key>
+	<string>.png</string>
 </dict>
 </plist>

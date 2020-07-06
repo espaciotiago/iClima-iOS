@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		10FCEEF26531D67C91EC5FC2 /* Pods_iClima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75810A027B4B5F664E1603EC /* Pods_iClima.framework */; };
+		993A66C324B38A810022CA23 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66C224B38A810022CA23 /* LoadingView.swift */; };
+		993A66C524B38E450022CA23 /* CityLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66C424B38E450022CA23 /* CityLocation.swift */; };
+		993A66C724B39A890022CA23 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66C624B39A890022CA23 /* Weather.swift */; };
+		993A66C924B39BD80022CA23 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66C824B39BD80022CA23 /* Wind.swift */; };
+		993A66CB24B39BE50022CA23 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66CA24B39BE50022CA23 /* Main.swift */; };
+		993A66CD24B39C0C0022CA23 /* WeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66CC24B39C0C0022CA23 /* WeatherItem.swift */; };
+		993A66CF24B3A63F0022CA23 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A66CE24B3A63F0022CA23 /* CityListViewController.swift */; };
 		9997381524B2582F0011BA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997381424B2582F0011BA1F /* AppDelegate.swift */; };
 		9997381924B2582F0011BA1F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997381824B2582F0011BA1F /* WeatherViewController.swift */; };
 		9997381C24B258300011BA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9997381A24B2582F0011BA1F /* Main.storyboard */; };
@@ -26,6 +33,13 @@
 		4B59F247D2712F4CD6D6D9AD /* Pods-iClima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClima.release.xcconfig"; path = "Target Support Files/Pods-iClima/Pods-iClima.release.xcconfig"; sourceTree = "<group>"; };
 		75810A027B4B5F664E1603EC /* Pods_iClima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iClima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847A1A5FC1CC92E8A2D443CC /* Pods-iClima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClima.debug.xcconfig"; path = "Target Support Files/Pods-iClima/Pods-iClima.debug.xcconfig"; sourceTree = "<group>"; };
+		993A66C224B38A810022CA23 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		993A66C424B38E450022CA23 /* CityLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLocation.swift; sourceTree = "<group>"; };
+		993A66C624B39A890022CA23 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		993A66C824B39BD80022CA23 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		993A66CA24B39BE50022CA23 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		993A66CC24B39C0C0022CA23 /* WeatherItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherItem.swift; sourceTree = "<group>"; };
+		993A66CE24B3A63F0022CA23 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		9997381124B2582F0011BA1F /* iClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9997381424B2582F0011BA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9997381824B2582F0011BA1F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +115,11 @@
 		9997382824B259500011BA1F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				993A66C424B38E450022CA23 /* CityLocation.swift */,
+				993A66C624B39A890022CA23 /* Weather.swift */,
+				993A66C824B39BD80022CA23 /* Wind.swift */,
+				993A66CA24B39BE50022CA23 /* Main.swift */,
+				993A66CC24B39C0C0022CA23 /* WeatherItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +129,7 @@
 			children = (
 				9997383224B2668A0011BA1F /* StackItemView.swift */,
 				9997383A24B27ECD0011BA1F /* WeatherLabel.swift */,
+				993A66C224B38A810022CA23 /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9997381824B2582F0011BA1F /* WeatherViewController.swift */,
+				993A66CE24B3A63F0022CA23 /* CityListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,11 +281,18 @@
 				9997383524B26E440011BA1F /* Formatter.swift in Sources */,
 				9997383324B2668A0011BA1F /* StackItemView.swift in Sources */,
 				9997381924B2582F0011BA1F /* WeatherViewController.swift in Sources */,
+				993A66C724B39A890022CA23 /* Weather.swift in Sources */,
+				993A66CB24B39BE50022CA23 /* Main.swift in Sources */,
 				9997381524B2582F0011BA1F /* AppDelegate.swift in Sources */,
 				9997382F24B25A710011BA1F /* ConfigurationManager.swift in Sources */,
 				9997383B24B27ECD0011BA1F /* WeatherLabel.swift in Sources */,
+				993A66CF24B3A63F0022CA23 /* CityListViewController.swift in Sources */,
 				9997383124B25ACB0011BA1F /* Constants.swift in Sources */,
+				993A66CD24B39C0C0022CA23 /* WeatherItem.swift in Sources */,
 				9997383724B277910011BA1F /* NetworkService.swift in Sources */,
+				993A66C324B38A810022CA23 /* LoadingView.swift in Sources */,
+				993A66C524B38E450022CA23 /* CityLocation.swift in Sources */,
+				993A66C924B39BD80022CA23 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K77J59352;
+				DEVELOPMENT_TEAM = 69X2QW4Q3B;
 				INFOPLIST_FILE = iClima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K77J59352;
+				DEVELOPMENT_TEAM = 69X2QW4Q3B;
 				INFOPLIST_FILE = iClima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

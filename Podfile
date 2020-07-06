@@ -7,4 +7,5 @@ target 'iClima' do
 
   # Pods for iClima
   pod 'Alamofire', '~> 5.2'
+  pod 'SwiftyJSON'
 end
