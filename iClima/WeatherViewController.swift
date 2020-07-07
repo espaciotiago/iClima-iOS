@@ -55,18 +55,22 @@ class WeatherViewController: UIViewController {
         //Create ui interface items
         //Image of the weather
         weatherImage.translatesAutoresizingMaskIntoConstraints = false
+        
         //Middle stack view items
         stackViewItems.translatesAutoresizingMaskIntoConstraints = false
+        
         //Button of city selection
         buttonSelectCity.setTitle("SELECT OTHER CITY", for: .normal)
         buttonSelectCity.addTarget(self, action: #selector(showCityList), for: .touchUpInside)
         buttonSelectCity.translatesAutoresizingMaskIntoConstraints = false
+        
         // Place the ui interface items
         view.addSubview(weatherValue)
         view.addSubview(weatherImage)
         view.addSubview(stackViewItems)
         view.addSubview(buttonSelectCity)
         view.addSubview(loadingView)
+        
         //Set the anchors constrains
         weatherValue.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         weatherValue.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
@@ -97,15 +101,22 @@ class WeatherViewController: UIViewController {
         networkService.getWeatherData(of: currentCity) { (weather, completed, errorMessage) in
             if(completed){
                 if let weather = weather {
-                    print(weather)
                     self.updateViews(weather: weather)
                 }
             }else{
                 //Show error
-                print(errorMessage)
+                self.showAlert(message: errorMessage ?? "There was an error")
             }
             self.loadingView.loading = false
         }
+    }
+    func showAlert(message: String){
+        let alert = UIAlertController(title: "We are sorry",
+                                      message: message,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
     }
     func updateViews(weather: Weather){
         self.title = weather.name
